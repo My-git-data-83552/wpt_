@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator
+        </title>
+        <style>
+        
+        
+        input{
+            margin-top: 20px;
+    
+        }
+
+        button{
+            margin-top: 40px;
+            margin-left: 20px;
+        }
+
+        a{
+            display: flex;
+            flex-direction: column;
+            max-width: 300px; /* Adjust as needed */
+            margin: 0 auto;
+
+        }
+    </style>
+    </head>
+    <body>
+        <div class="a">
+                <h1 style="text-decoration: underline;"><center>Calculator</center></h1>
+            <form style="display: inline-block;text-align: left;">
+                <label for="num1">Enter Number 1</label>
+                <input type="number" id="num1">
+                <br>
+                <label for="num2">Enter Number 2</label>
+                <input type="number" id="num2">
+                <br>
+                <label for="result">Result</label>
+                <input type="number" id="result">
+                <br>
+                <div>
+                <input type="button" value="Addition" onclick="DoAddition()"/>
+                <input type="button" value="Substraction" onclick="DoSubstraction()"/>
+                <input type="button" value="Multiplication" onclick="DoMultiplication()"/>
+                <input type="button" value="Division" onclick="DoDivision()"/>
+            
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>

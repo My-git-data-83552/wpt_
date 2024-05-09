@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 style="text-decoration: underline;"><center>Registration Form</center></h1>
+ <div class="register1">
+        <img src="img1.png" alt="img1">
+    
+        <form  id="formDetails">
+            <label for="demo">Name:</label>
+            
+            <input type="text" id="demo">
+            <div style="width: 200px; color: red" id="errorDiv1"></div>
+            
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" id="birthDate"> <br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <div style="width: 200px; color: red" id="errorDiv2"></div>
+            <br>
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <div style="width: 200px; color: red" id="errorDiv3"></div>
+            <br>
+
+            <label for="address">Address:</label>
+            <label for="state">State</label>
+            <select name="state" id="state">
+                <option value="1">Maharashtra</option>
+                <option value="2">Kerela</option>
+                <option value="3">Uttar Pradesh</option>
+                <option value="4">Gujrat</option>
+              </select>
+            <label for="District">District</label>  
+              <select name="District" id="District">
+                <option value="1">Pune</option>
+                <option value="2">Kochi</option>
+                <option value="3">Lucknow</option>
+                <option value="4">Surat</option>
+              </select>
+            <label for="city">City</label>
+              <select name="city" id="city">
+                <option value="1">Pune</option>
+                <option value="2">Kochi</option>
+                <option value="3">Lucknow</option>
+                <option value="4">Surat</option>
+              </select>
+              <br>
+              <label for="gender1">Gender:</label>
+              <label for="male">Male</label>
+              <input type="radio" id="gender2" name="gender">
+              <label for="female">Female</label>
+              <input type="radio" id="gender3" name="gender">
+              <br>
+              <label for="uploadimg">Upload Image</label>
+              <input type="file" id="uploadimg"> <br>
+
+              <label for="course">Select Your Course</label>
+              <select name="course" id="course">
+                <option value="1">DAC</option>
+                <option value="2">DESD</option>
+                <option value="3">DBDA</option>
+                <option value="4">DMIC</option>
+              </select>
+              <br>
+              <input type="button" name="Register" value="Register" id="register" onclick="DoSomething()">
+              <input type="button" name="clear" id="Clear" value="Clear" onclick="DoClear()">
+              
+             
+        </form>
+    </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
